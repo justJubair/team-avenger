@@ -1,0 +1,9 @@
+body{
+    background:url('https://cdn.britannica.com/60/182360-050-CD8878D6/Avengers-Age-of-Ultron-Joss-Whedon.jpg') ,
+    linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+}
+

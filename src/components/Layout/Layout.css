@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    max-width: 1080px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.cards-container {
+    width: 66%;
+}
+
+.cart{
+    width: 33%;
+}
