@@ -1,7 +1,7 @@
 
 import PropTypes from 'prop-types'
 import './Card.css'
-const Card = ({card}) => {
+const Card = ({card, handleSelect}) => {
     const {name, image, role, salary, age, country} = card
   return (
     <div className='card'>
@@ -13,13 +13,14 @@ const Card = ({card}) => {
       <p>Age: {age}</p>
       <p>Country: {country}</p>
       </div>
-      <button className='card-btn'>Select</button>
+      <button onClick={()=>handleSelect(card)} className='card-btn'>Select</button>
     </div>
   )
 }
 
 Card.propTypes = {
-card: PropTypes.object.isRequired
+card: PropTypes.object.isRequired,
+handleSelect: PropTypes.func.isRequired
 }
 
 export default Card

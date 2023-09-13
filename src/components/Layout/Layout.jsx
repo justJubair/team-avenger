@@ -1,25 +1,39 @@
+import { useState } from 'react'
 import Cards from '../Cards/Cards'
 import Cart from '../Cart/Cart'
 import './Layout.css'
-import PropTypes from 'prop-types'
 
 const Layout = () => {
+  const [selectedCard, setSelectedCard] = useState([]);
+  const [cost, setCost] = useState(0);
+  const handleSelect = (card)=>{
+    let count = card.salary;
+    const isExist = selectedCard.find(item=>item.id === card.id);
+    if(isExist){
+      return alert('Already Selected')
+    } 
+
+      selectedCard.forEach(actor=>{
+        count = count + actor.salary
+      })
+      setCost(count);
+      setSelectedCard([...selectedCard, card])
+    
+  }
   return (
   
       <div className='container'>
         <div className='cards-container'>
-          <Cards/>
+          <Cards handleSelect={handleSelect} />
         </div>
         <div className='cart'>
-          <Cart/>
+          <Cart selectedCard={selectedCard} cost={cost}/>
         </div>
       </div>
     
   )
 }
 
-Layout.propTypes = {
 
-}
 
 export default Layout
