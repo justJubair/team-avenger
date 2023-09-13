@@ -6,10 +6,29 @@
     margin-top: 4rem;
 }
 
-.cards-container {
-    width: 66%;
+.title-container{
+    color: #ffffffb7;
+    text-align: center;
+}
+.span{
+    color: rgb(172, 26, 26);
+    text-transform: uppercase;
+}
+.span-r {
+    color: #fff;
 }
 
-.cart{
-    width: 33%;
+@media screen and (max-width: 425px){
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 1rem;
+    }
+    .cart{
+        width: 100%;
+    }
+    .cards-container{
+        width: 100%;
+        margin-top: 1rem;
+    }
 }

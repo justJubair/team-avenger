@@ -5,7 +5,7 @@ const Card = ({card, handleSelect}) => {
     const {name, image, role, salary, age, country} = card
   return (
     <div className='card'>
-      <img src={image} alt="" />
+      <img className='img' src={image} alt="" />
       <h3>{name}</h3>
       <div className='text-center'>
       <p>Role: {role}</p>
