@@ -19,9 +19,10 @@ const Layout = () => {
     selectedCard.forEach((actor) => {
       count = count + actor.salary;
     });
-    const remaining = 50000 - count;
-    if (count > 50000) {
-      return alert("Out of Budget");
+    const remaining = 30000 - count;
+    if (count > 30000) {
+      return swal({title: 'Out of Money',
+      icon: 'error'});
     }
     setRemainingBudget(remaining);
     setCost(count);
@@ -31,7 +32,7 @@ const Layout = () => {
     <div>
       <div className="title-container">
       <h1 className="title">Crete you own <span className="span">ma<span className="span-r">r</span>vel</span> crew</h1>
-      <h2>Total Budget: 50,000 $</h2>
+      <h2>Total Budget: 30,000 $</h2>
       </div>
       <div className="container">
         <div className="cards-container">
