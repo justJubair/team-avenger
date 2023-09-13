@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Card from "../Card/Card";
-
+import './Cards.css'
 const Cards = () => {
   const [cards, setCards] = useState([]);
   useEffect(() => {
@@ -16,7 +16,7 @@ const Cards = () => {
     loadData();
   }, []);
   return (
-    <div>
+    <div className="cards-container">
       {
         cards.map(card=><Card key={card.id} card={card}/>)
       }

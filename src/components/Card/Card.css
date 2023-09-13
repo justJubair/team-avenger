@@ -1,0 +1,26 @@
+.card{
+    background-color: rgba(0, 0, 0, 0.312);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 200px;    
+    
+}
+
+.text-center{
+    text-align: start;
+}
+
+.card-btn{
+    padding: 12px 25px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgba(80, 80, 220, 0.701);
+}
+
+.salary{
+    font-weight: bold;
+    text-decoration: underline;
+}
