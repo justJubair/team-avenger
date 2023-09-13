@@ -3,7 +3,7 @@
     background-color: rgba(0, 0, 0, 0.454);
     color: #fff;
     padding: 1rem;
-    width: 300px;
+    width: 350px;
     margin: 0 auto;
     text-align: start;
     height: 700px;
@@ -14,6 +14,9 @@
     margin-bottom: 1rem;
 }
 
+.money{
+    color: rgb(40, 212, 192);
+}
 .cart{
     display: flex;
     gap: 10px;

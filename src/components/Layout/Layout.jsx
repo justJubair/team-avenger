@@ -2,6 +2,7 @@ import { useState } from "react";
 import Cards from "../Cards/Cards";
 import Cart from "../Cart/Cart";
 import "./Layout.css";
+import swal from 'sweetalert';
 
 const Layout = () => {
   const [selectedCard, setSelectedCard] = useState([]);
@@ -11,7 +12,8 @@ const Layout = () => {
     let count = card.salary;
     const isExist = selectedCard.find((item) => item.id === card.id);
     if (isExist) {
-      return alert("Already Selected");
+      return swal({title: 'Already selected',
+    icon: 'error'});
     }
 
     selectedCard.forEach((actor) => {
