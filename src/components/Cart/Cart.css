@@ -8,24 +8,19 @@
     text-align: start;
     height: 700px;
 }
-.cart-img{
-    width: 50px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-}
 
 .money{
     color: rgb(40, 212, 192);
 }
-.cart{
-    display: flex;
-    gap: 10px;
-    /* margin-top: 1rem; */
-}
+
 
 .crew{
     text-decoration: underline;
 }
+
+
+
+
 
 @media screen and (max-width: 425px){
     .cart-container{

@@ -1,0 +1,34 @@
+.actor-img{
+    width: 55px;
+    border-radius: 50%;
+}
+
+.name-img{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.remove-btn{
+    height: 40px;
+
+    padding: 0 0.8rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(193, 5, 5, 0.652);
+    border-radius: 10px;
+    border: none;
+
+}
+
+.remove-btn:hover{
+    background-color: rgb(166, 2, 2);
+}

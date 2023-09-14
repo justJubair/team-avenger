@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import "./Cart.css";
+import SelectedActor from "../SelectedActor/SelectedActor";
 const Cart = ({ selectedCard, cost, remaining }) => {
   // console.log(cost)
   return (
@@ -8,14 +9,7 @@ const Cart = ({ selectedCard, cost, remaining }) => {
       <h2>Remaining Budget: <span className="money">{remaining.toFixed(2)} $</span></h2>
       <h2 className="crew">Selected Crew</h2>
       <div>
-        {selectedCard.map((card) => (
-          <div key={card.id}>
-            <div className="cart">
-              <img className="cart-img" src={card.image} alt="" />
-              <h3>{card.name}</h3>
-            </div>
-          </div>
-        ))}
+        {selectedCard.map(card=><SelectedActor key={card.id} card={card}/>)}
       </div>
     </div>
   );
